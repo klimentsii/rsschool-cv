@@ -1,4 +1,3 @@
-﻿[Main](#main) [Me](#me) [skills](#skills) [works](#works) [Contacts](#contacts)
 # **IT'S MY PAGE** 
 ## **and my information** 
 ## **Some words about me:** 
