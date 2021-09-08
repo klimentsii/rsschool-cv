@@ -1,0 +1,294 @@
+body{
+    margin:0;
+    font-size: 16px;
+    font-family: 'Urbanist', sans-serif;
+    background-color:#f0dab3;
+}
+
+h1, h2, h3,h4,h5,h6{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+ul{
+    padding-inline-start: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro{
+    width:100%;
+    height: 100vh;
+    background: url("background.png") center no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.intro_h{
+    color: #f0dab3;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.intro_h1{
+    text-transform: uppercase;
+    font-size:100px;
+}
+.intro_h2{
+    font-size: 50px;
+}
+
+.header{
+    position: absolute;
+    background-color: rgb(149,142,134,.5);
+    font-size:32px;
+    right: 0;
+    left:0;
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav_link{
+    text-transform: uppercase;
+    color:#f0dab3;
+    transition: color .4s linear;
+    margin: 16px 32px;
+}
+.nav_link:hover{
+    color: #B5A58E;
+    text-decoration:bold;
+}
+
+.skills_start{
+    background: url("bg-2.jpg") center no-repeat;
+    background-size: cover;
+}
+.skills{
+    width: 100%;
+    display: flex;
+}
+.skills_item{
+    margin: 0;
+    width: 50%;
+}
+.skills_title{
+    font-size: 36px;
+    color: #f0dab3;
+    text-align: center;
+    text-transform: uppercase;
+    margin:20px
+}
+.skills_text{
+    text-align: center;
+    font-size: 24px;
+    color: #f0dab3;
+}
+
+.me{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.me_start{
+    margin: 20px;
+}
+.me_title{
+    font-size: 32px;
+    margin: 20px;
+}
+.me_text{
+    margin: 20px;
+}
+.me_photo{
+    border-radius: 20%;
+    margin: 20px;
+}
+
+.works{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.works_title{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.works_item{
+    width: 100%;
+    text-align: center;
+}
+.works_photo{
+    width:300px;
+    height: 150px;
+    margin: 20px;
+}
+.works_text{
+    font-size:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: #0000009a;
+    font-size:16px;
+    right: 0;
+    left:0;
+}
+
+@media(max-width:1200px){
+    .intro_h1{
+        font-size: 60px;
+    }
+    .intro_h2{
+        font-size: 40px;
+    }
+
+    .header{
+        font-size:24px;
+    }
+    .footer{
+        font-size:12px;
+    }
+
+    .nav_link{
+        margin:15px;
+    }
+
+    .skills_title{
+        font-size: 24px;
+        margin: 15px;
+    }
+    .skills_text{
+        font-size:20px;
+    }
+}
+
+@media(max-width:800px){
+    .intro_h1{
+        font-size: 40px;
+    }
+    .intro_h2{
+        font-size: 20px;
+    }
+
+    .header{
+        font-size:18px;
+    }
+    .footer{
+        font-size:9px;
+    }
+
+    .nav_link{
+        margin:10px;
+    }
+
+    .skills_title{
+        font-size: 18px;
+        margin: 10px;
+    }
+    .skills_text{
+        font-size:14px;
+    }
+
+    .me{
+        flex-direction: column;
+        text-align: center;
+    }
+    .me_title{
+        font-size: 16px;
+    }
+    .me_text{
+        font-size: 8px;
+    }
+    .me_photo{
+        width:50%;
+        height: 50%;
+    }
+
+    .works_item{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .works_text{
+        width: 100%;
+        font-size:12px;
+    }
+    .works_photo{
+        width:150px;
+        height: 75px;;
+    }
+}
+
+@media(max-width:400px){
+    .intro_h1{
+        font-size: 20px;
+    }
+    .intro_h2{
+        font-size: 10px;
+    }
+
+    .header{
+        font-size:8px;
+    }
+    .footer{
+        font-size:6px;
+    }
+
+    .nav_link{
+        margin:5px;
+    }
+
+    .skills_title{
+        font-size: 12px;
+        margin: 5px;
+    }
+    .skills_text{
+        font-size:8px;
+    }
+}
+
+@media(max-width:320px){
+    .intro_h1{
+        font-size: 10px;
+    }
+    .intro_h2{
+        font-size: 5px;
+    }
+
+    .header{
+        font-size:4px;
+    }
+    .footer{
+        font-size:4px;
+    }
+
+    .nav_link{
+        margin:3px;
+    }
+
+    .skills_title{
+        font-size: 6px;
+        margin: 3px;
+    }
+    .skills_text{
+        font-size:4px;
+    }
+}
