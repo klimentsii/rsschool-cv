@@ -4,6 +4,9 @@ body{
     font-family: 'Urbanist', sans-serif;
     background-color:#f0dab3;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 h1, h2, h3,h4,h5,h6{
     margin: 0;
@@ -150,6 +153,25 @@ ul{
     font-size:16px;
     right: 0;
     left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.foot_photo {
+    width: 10%;
+}
+.foot_link {
+    text-transform: uppercase;
+    color:#f0dab3;
+    transition: color .4s linear;
+    margin: 16px 32px;
+}
+.foot_link:hover{
+    color: #B5A58E;
+    text-decoration:bold;
+}
+.rs {
+    text-align: center;
 }
 
 @media(max-width:1200px){
@@ -164,7 +186,10 @@ ul{
         font-size:24px;
     }
     .footer{
-        font-size:12px;
+        font-size:10px;
+    }
+    .foot_link{
+        margin:15px;
     }
 
     .nav_link{
@@ -192,11 +217,14 @@ ul{
         font-size:18px;
     }
     .footer{
-        font-size:9px;
+        font-size:6px;
     }
 
     .nav_link{
         margin:10px;
+    }
+    .foor_link{
+        margin:8px;
     }
 
     .skills_title{
@@ -216,10 +244,6 @@ ul{
     }
     .me_text{
         font-size: 8px;
-    }
-    .me_photo{
-        width:50%;
-        height: 50%;
     }
 
     .works_item{
@@ -249,10 +273,13 @@ ul{
         font-size:8px;
     }
     .footer{
-        font-size:6px;
+        font-size:4px;
     }
 
     .nav_link{
+        margin:5px;
+    }
+    .foot_link{
         margin:5px;
     }
 
@@ -282,6 +309,9 @@ ul{
 
     .nav_link{
         margin:3px;
+    }
+    .foot_link{
+        margin:2px;
     }
 
     .skills_title{
